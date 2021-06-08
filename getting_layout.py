@@ -2,6 +2,7 @@ from PIL import Image
 import numpy as np
 
 
+
 I = Image.open('./layout_test.png') 
 I.show()    
 I_array = np.array(I)
