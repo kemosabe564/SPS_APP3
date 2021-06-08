@@ -28,5 +28,3 @@ for i in range(I_length):
                     f.writelines("\n")
                 
     print("OK")
-
-    
