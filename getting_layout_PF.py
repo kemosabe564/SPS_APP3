@@ -36,4 +36,4 @@ for i in range(I_length):
             with open("layout_map.txt","a") as f:
                 f.writelines(data1)
                 f.writelines("\n")
-    # print("OK")
+print("Done")
