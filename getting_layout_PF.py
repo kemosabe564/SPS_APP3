@@ -2,8 +2,8 @@ from PIL import Image
 import numpy as np
 import cv2
 
-I = Image.open('./layoutPF.png') 
-image = cv2.imread('./layoutPF.png')
+I = Image.open('layoutPF.png') 
+image = cv2.imread('layoutPF.png')
 newsize = (810,1431)
 
 image = cv2.resize(image,newsize,interpolation=cv2.INTER_AREA)
@@ -31,7 +31,8 @@ for i in range(I_length):
         if (I_array[i][j] == [0, 0, 0]).all():
             x = 0.01*(i)
             y = 0.01*(j)
-            data1 = str(round(x,2)) + ", " + str(round(y,2)) + ", " + "0"
+            
+            data1 = str(x).split('.')[0] + '.' + str(x).split('.')[1][:2] + ", " + str(y).split('.')[0] + '.' + str(y).split('.')[1][:2] + ", " + "0"
             with open("layout_map.txt","a") as f:
                 f.writelines(data1)
                 f.writelines("\n")
