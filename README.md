@@ -10,3 +10,6 @@ for displaying, create a folder named as "frame" and put frame.txt into it
 Size: 
 width = 1431 pixels = 14.31m
 hight = 810 pixels = 8.1m
+
+for auto cor:
+put template.txt into raw folder
